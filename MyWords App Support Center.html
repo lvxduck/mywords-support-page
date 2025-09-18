@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyWords - Support & Help Center</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #764ba2;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(118, 75, 162, 0.3);
+      }
+
+      .subtitle {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-size: 1em;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      @media (min-width: 768px) {
+        .content {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
+
+      .main-content {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        height: fit-content;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        color: #764ba2;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e8e8e8;
+      }
+
+      .faq-item {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        border-left: 4px solid #667eea;
+      }
+
+      .faq-question {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+      }
+
+      .faq-answer {
+        color: #666;
+      }
+
+      .contact-card {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-card h3 {
+        margin-bottom: 15px;
+        font-size: 1.3em;
+      }
+
+      .contact-email {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 12px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .contact-email:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .feature-list {
+        list-style: none;
+      }
+
+      .feature-list li {
+        padding: 8px 0;
+        padding-left: 25px;
+        position: relative;
+        color: #555;
+      }
+
+      .feature-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .quick-links {
+        margin-top: 20px;
+      }
+
+      .quick-links h4 {
+        color: #764ba2;
+        margin-bottom: 15px;
+      }
+
+      .quick-links ul {
+        list-style: none;
+      }
+
+      .quick-links li {
+        margin-bottom: 8px;
+      }
+
+      .quick-links a {
+        color: #667eea;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .quick-links a:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+
+      .response-time {
+        background: #e8f5e8;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+        border-left: 4px solid #4caf50;
+      }
+
+      .response-time strong {
+        color: #2e7d2e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">MyWords</div>
+        <div class="subtitle">Smart Dictionary & Vocabulary Builder</div>
+        <div class="description">
+          MyWords is more than just an English-English and English-Vietnamese
+          dictionary. It helps you create your own word collection, memorize
+          vocabulary with Spaced Repetition, and practice through fun quizzes
+          that make learning more engaging and effective.
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="main-content">
+          <div class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                How do I create my personal word collection?
+              </div>
+              <div class="faq-answer">
+                To build your personal word collection, simply search for any
+                word in the dictionary and tap the "Add to Collection" button.
+                You can organize your words into custom categories and add
+                personal notes to help with memorization.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                What is Spaced Repetition and how does it work?
+              </div>
+              <div class="faq-answer">
+                Spaced Repetition is a scientifically-proven learning technique
+                that shows you words at increasing intervals. Words you find
+                difficult appear more frequently, while words you know well
+                appear less often. This optimizes your learning efficiency and
+                long-term retention.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Can I use MyWords offline?</div>
+              <div class="faq-answer">
+                Yes! MyWords includes an offline dictionary feature that allows
+                you to look up words and review your personal collection even
+                without an internet connection. Some advanced features may
+                require connectivity.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                How do the quizzes help with vocabulary learning?
+              </div>
+              <div class="faq-answer">
+                Our interactive quizzes test your knowledge through multiple
+                formats: multiple choice, fill-in-the-blank, and pronunciation
+                challenges. The quiz system adapts to your performance, focusing
+                on words that need more practice.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                Is there a limit to how many words I can save?
+              </div>
+              <div class="faq-answer">
+                There's no limit to your personal word collection! Save as many
+                words as you'd like and organize them however works best for
+                your learning style.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                Can I sync my progress across multiple devices?
+              </div>
+              <div class="faq-answer">
+                Yes, create an account to sync your word collections, learning
+                progress, and quiz results across all your devices. Your
+                vocabulary journey continues seamlessly wherever you are.
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                The app is running slowly or crashing
+              </div>
+              <div class="faq-answer">
+                Try restarting the app and ensuring you have the latest version
+                installed. Clear the app cache if the problem persists. If you
+                have a large word collection, the app may need a moment to load
+                all your data.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">I can't hear pronunciation audio</div>
+              <div class="faq-answer">
+                Check your device's volume settings and ensure the app has
+                permission to play audio. Some pronunciations require an
+                internet connection to download.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">My word collection disappeared</div>
+              <div class="faq-answer">
+                If you have an account, try signing out and back in to sync your
+                data. Contact support if you're still missing words - we may be
+                able to help recover your collection.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="contact-card">
+            <h3>Need More Help?</h3>
+            <p>Get in touch with our support team</p>
+            <a href="mailto:levinhnhanduc@gmail.com" class="contact-email">
+              levinhnhanduc@gmail.com
+            </a>
+          </div>
+
+          <div class="response-time">
+            <strong>Response Time:</strong><br />
+            We typically respond within 24-48 hours
+          </div>
+
+          <div class="quick-links">
+            <h4>App Features</h4>
+            <ul class="feature-list">
+              <li>English-English Dictionary</li>
+              <li>English-Vietnamese Dictionary</li>
+              <li>Personal Word Collections</li>
+              <li>Spaced Repetition System</li>
+              <li>Interactive Quizzes</li>
+              <li>Offline Access</li>
+              <li>Progress Tracking</li>
+              <li>Multi-device Sync</li>
+            </ul>
+          </div>
+
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#getting-started">Getting Started Guide</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+              <li><a href="#updates">App Updates</a></li>
+              <li><a href="#feedback">Send Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
